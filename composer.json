@@ -1,0 +1,40 @@
+{
+  "name": "bridit/jsonapi-deserializer",
+  "description": "Deserialize a JsonApi response",
+  "keywords": [
+    "bridit",
+    "jsonapi",
+    "deserializer"
+  ],
+  "homepage": "https://github.com/bridit/jsonapi-deserializer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gustavo Siqueira",
+      "email": "gus@brid-it.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bridit\\JsonApiDeserializer\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Bridit\\JsonApiDeserializer\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
